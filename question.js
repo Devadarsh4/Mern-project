@@ -1,4 +1,4 @@
-function verify(userRole, isAuthenticated) {
+function verify(userRole, isAuthenticated, userAge) {
     if (!isAuthenticated) {
         console.log("Please Log In");
     } else if (isAuthenticated && userRole === "admin") {
@@ -11,4 +11,4 @@ function verify(userRole, isAuthenticated) {
 let isAuthenticated = 1;
 let userAge = 25;
 let userRole = 'admin';
-verify(userRole, isAuthenticated);
+verify(userRole, isAuthenticated, userAge);
